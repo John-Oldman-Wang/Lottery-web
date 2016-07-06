@@ -23,8 +23,7 @@ window.onload=function(){
 		index++;
 		var now=new Date();
 		var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
-		now.getTime()
-		var mydate=now.getFullYear()+"年"+now.getMonth()+"月"+now.getDate()+"日 "+weekday[now.getDay()]+" "+now.getTime();
+		var mydate=now.getFullYear()+"年"+(now.getMonth()+1)+"月"+now.getDate()+"日 "+weekday[now.getDay()]+" "+now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
 		var Lotterylist=document.getElementById("Lotterylist");
 		Lotterylist.innerHTML=Lotterylist.innerHTML+"<td>"+index+"</td><td>"+title.innerHTML+"</td><td>"+mydate+"</td>";
 		document.getElementById("list").getElementsByTagName("table")[0].style.display="block";
